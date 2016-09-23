@@ -2,4 +2,6 @@
 1-2: strings and ltrace are your friends.
 2-3: use symbolic link.
 3-4: just remember that \n=return.
-4-5: look up the perl library or using online tool such as Crypo.
+4-5: look up the perl library or using online tool such as Crypo to convert binary to ASCII.
+5-6: symlin: ln -s.
+6-7: brute-force works

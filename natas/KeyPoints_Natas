@@ -1,0 +1,8 @@
+0-3: look at source code
+3-4: les navigateurs utilisent /robots.txt pour crawler.
+4-5: Tamper with Referer, the PHP variable for original address.
+5-6: Tamper Chrome
+6-8: Read carefully source code
+8-9: in PHP bin2hex - hextobin (with option ASCII otherwise you'll end up with real binary instead of characters), base64_encode - base64_decode, strrev - strrev
+9-11: passthru opens a Linux shell, hurray!
+11-12: use document.cookie="data..." to set cookie, http://sandbox.onlinephpfunctions.com/ is great for testing php functions. Careful, php functions cannot use global variables...
