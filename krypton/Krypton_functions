@@ -1,0 +1,37 @@
+0-2:
+alias rot13="tr '[A-Za-z]' '[N-ZA-Mn-za-m]'"
+
+letters=abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+pwEnc="yriry gjb cnffjbeq ebggra"
+for i in {0..25}
+do
+ssh krypton2@localhost
+echo $pwEnc | tr "${letters:0:26}" "${letters:${i}:26}" |  tr "[:lower:]" "[:upper:]"
+done
+
+k4="KSVVW BGSJD SVSIS VXBMN YQUUK BNWCU ANMJS"
+
+l=THESANDRIOFWCLGPMUBYKXVJZ
+k=JDSUQGWNCBXKZVEYTMALFOIRP
+
+echo $k4 | tr "${k}" "${l}"
+
+array=($(echo $(
+    for ((i=0; i<${#s}-6; i++))
+    do
+        echo "${s:$i*6:1}"
+    done 
+    )| tr -d '[[:space:]]'))
+echo "${array[@]}"
+
+ou bien 
+echo $(
+    for ((i=0; i<${#s}-6; i++))
+    do
+        echo "${s:$i*6:1}"
+    done 
+    )| tr -d '[[:space:]]' | grep -o . | sort | uniq -c | sort -rn
+
+k5="HCIKV RJOX"
+key="FREKEY"
+

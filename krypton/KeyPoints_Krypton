@@ -1,0 +1,10 @@
+1-2: alias rot13="tr '[A-Za-z]' '[N-ZA-Mn-za-m]'"; the answer is the last word...
+2-3: rot14="tr '[A-Za-z]' '[O-ZA-No-za-n]'"; ./encrypt on [a-z] yields result easily.
+3-4: cat found1 found2 found3 | grep -o . | sort | uniq -c | sort -rn
+go to http://www.richkni.co.uk/php/crypta/freq.php
+and   http://www.simonsingh.net/The_Black_Chamber/hintsandtips.html
+4-5: text=$(<found1) stores the string in varibale $text
+tr -d '[[:space:]]' trims out spaces
+s=$(cat found1 | tr -d '[[:space:]]')
+
+
